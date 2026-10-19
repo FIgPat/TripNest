@@ -1,0 +1,8 @@
+{
+  "name": "tripnest-prototype",
+  "version": "1.0.0",
+  "description": "TripNest accommodation recommendation prototype with Node.js backend",
+  "main": "server.js",
+  "scripts": {"start":"node server.js","dev":"node server.js"},
+  "dependencies": {"express":"^5.1.0"}
+}

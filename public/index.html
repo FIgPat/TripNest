@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="th">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TripNest | Accommodation Recommendation</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<header class="nav"><div class="brand">
+                        <img src="/images/Logo/Logo.webp" class="logo" alt="TripNest Logo">
+                        <span>TripNest</span></div><nav><a href="#home">หน้าแรก</a><a href="#recommend">แนะนำที่พัก</a><a href="#about">เกี่ยวกับเรา</a></nav><button class="login">เข้าสู่ระบบ</button></header>
+<main>
+<section id="home" class="hero"><div class="hero-inner"><div class="eyebrow">ACCOMMODATION RECOMMENDATION</div><h1>ค้นหาที่พักที่<br><span>เหมาะกับการเดินทางของคุณ</span></h1><p>ค้นหาโรงแรม โฮสเทล และอพาร์ตเมนต์ พร้อมข้อมูลราคา ทำเล และคะแนนรีวิวในที่เดียว</p><div class="search-box"><input id="q" placeholder="ค้นหาชื่อที่พัก / ทำเล / สถานีรถไฟฟ้า"><select id="type"><option>ทั้งหมด</option><option>Hotel</option><option>Boutique Hotel</option><option>Hostel</option><option>Apartment</option><option>Residence</option><option>Condominium</option></select><button onclick="loadHotels()">ค้นหา</button></div></div></section>
+<section id="recommend" class="section"><div class="section-head"><div><div class="eyebrow">RECOMMENDED FOR YOU</div><h2>ที่พักแนะนำ</h2><p>คัดสรรที่พักยอดนิยมและคุ้มค่าสำหรับคุณ</p></div><select id="sort" onchange="loadHotels()"><option value="recommended">แนะนำ</option><option value="rating">คะแนนสูงสุด</option><option value="priceLow">ราคาต่ำสุด</option><option value="priceHigh">ราคาสูงสุด</option></select></div><div class="chips"><button onclick="setMax(1000)">ไม่เกิน ฿1,000</button><button onclick="setMax(1500)">ไม่เกิน ฿1,500</button><button onclick="setMax(2500)">ไม่เกิน ฿2,500</button><button onclick="setMax(0)">ทั้งหมด</button></div><div id="cards" class="cards"></div></section>
+<section id="about" class="about"><div><div class="eyebrow">WHY TRIPNEST?</div><h2>เลือกที่พักง่ายขึ้น<br>ก่อนออกเดินทาง</h2></div><div class="features"><div><b>01</b><h3>ค้นหาได้ง่าย</h3><p>ค้นหาตามชื่อ ทำเล ประเภท และงบประมาณ</p></div><div><b>02</b><h3>เปรียบเทียบข้อมูล</h3><p>ดูราคา คะแนน และจุดเด่นของแต่ละที่พัก</p></div><div><b>03</b><h3>ตัดสินใจเร็วขึ้น</h3><p>รวมข้อมูลสำคัญไว้ในหน้าเดียว</p></div></div></section>
+</main>
+<footer>© 2026 TripNest — Accommodation Recommendation Website</footer><script src="/app.js"></script></body></html>
